@@ -12,6 +12,8 @@
     <!-- Style File -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/sylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <!-- google Font -->
     <link rel="stylesheet" href="font/google.font.css">
     <!-- Font Awesome icon -->
@@ -22,31 +24,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- Cuntry Code With Flage -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
-    <script>
-        //Switches between stylesheets based on the orientation of the screen
-        function setOrientationStylesheet() {
-            let currentLink = document.querySelector("link[href='css/sylesheet.css'], link[href='css/responsive.css']");
-    
-            if (!currentLink) {
-                currentLink = document.createElement('link');
-                currentLink.rel = 'stylesheet';
-                document.head.appendChild(currentLink);
-            }
-    
-            if (window.matchMedia("(orientation: portrait)").matches) {
-                currentLink.setAttribute("href", "css/responsive.css");
-            } else {
-                currentLink.setAttribute("href", "css/sylesheet.css");
-            }
-        }
-    
-        window.addEventListener("resize", setOrientationStylesheet);
-        window.addEventListener("orientationchange", setOrientationStylesheet);
-    
-        // Initial check
-        setOrientationStylesheet();
-    </script>
-    
 </head>
 
 <body>
@@ -65,7 +42,7 @@
             <!-- Side Nav Bar -->
             <div class="side_nav_header">
                 <ul class="side_nav">
-                    <li class="active">Personal Details</li>
+                    <li class="active">1 out of 2</li>
                     <li>Course Details</li>
                 </ul>
                 <div class="logo">
@@ -79,35 +56,57 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="traforboshow">
+                                <div class="dropimages">
+                                    <input type="file" class="form-control">
+                                    <h4>Drag/Drop you picture or click to upload </h4>
+                                </div>
                                 <div class="form-group fullbox">
-                                    <select class="form-control" class="form-control">
-                                        <option selected>Select Asset Class</option>
-                                        <option>Plant and Machinery</option>
-                                        <option>Land and Building</option>
-                                        <option>Securities or Financial Assets</option>
-                                      </select>
+                                    <label>A bit about you</label>
+                                    <textarea class="form-control" cols="50" rows="10" placeholder="Short Bio"></textarea>
                                 </div>
                             </div>
-
-                            <button class="inalsubmitbtn backbtnsection">Back</button>
                         </div>
                         <div class="col-md-7">
                             <div class="traforboshow">
-                                <h3>Plant and Machinery </h3>
+                                <h3>Personal Details</h3>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Topic List ">
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email Id">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="City">
                                 </div>
                             </div>
                             <div class="traforboshow">
                                 <h3>Professional Details</h3>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Topics">
+                                    <input type="text" class="form-control" placeholder="Qualification">
                                 </div>
-                            </div>
-                            <div class="traforboshow">
-                                <h3>Securities or Financial Assets</h3>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Topics">
+                                    <input type="text" class="form-control" placeholder="Work Experience in Years">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Teaching Experience in Years">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="No of Paper Published">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="No. of National Seminar Presentation">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="No. of International Seminar presentation">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="GST number">
                                 </div>
                             </div>
 

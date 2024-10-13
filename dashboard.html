@@ -8,13 +8,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <!-- HTML Meta Tags -->
     <title> AaRVF </title>
-    <link rel="icon" type="image/png" href="/images/favicon.webp" />
+    <link rel="icon" type="image/png" href="images/favicon.webp" />
     <!-- Style File -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/sylesheet.css">
-    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sylesheet.css">
     <!-- google Font -->
-    <link rel="stylesheet" href="/font/google.font.css">
+    <link rel="stylesheet" href="font/google.font.css">
     <!-- Font Awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -23,6 +22,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- Cuntry Code With Flage -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <script>
+        //Switches between stylesheets based on the orientation of the screen
+        function setOrientationStylesheet() {
+            let currentLink = document.querySelector("link[href='css/sylesheet.css'], link[href='css/responsive.css']");
+    
+            if (!currentLink) {
+                currentLink = document.createElement('link');
+                currentLink.rel = 'stylesheet';
+                document.head.appendChild(currentLink);
+            }
+    
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                currentLink.setAttribute("href", "css/responsive.css");
+            } else {
+                currentLink.setAttribute("href", "css/sylesheet.css");
+            }
+        }
+    
+        window.addEventListener("resize", setOrientationStylesheet);
+        window.addEventListener("orientationchange", setOrientationStylesheet);
+    
+        // Initial check
+        setOrientationStylesheet();
+    </script>
 </head>
 
 <body>

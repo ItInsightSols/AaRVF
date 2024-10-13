@@ -1,4 +1,7 @@
-@import url("master.css");
+/*-- @import url("master.css");--*/
+
+@import url('responsive.css') screen and (orientation: portrait);
+
 
 /*-- Tab --*/
 
@@ -197,12 +200,17 @@ ul.hedtabsecbtn li.active a {
     color: #fff;
 }
 
-.side_nav_header .logo {
-    width: calc(100% - 50px);
-    margin: 0 auto;
-    display: block;
+.logo {
+    position: absolute;
+    bottom: 20px; /* Adjust this value to position the logo within the sidebar */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+.logo img {
+    width: 300px; /* Adjust the size as needed */
+    height: auto;
+}
 .traforboshow {
     background: #D9D9D9;
     border-radius: 10px;
@@ -219,7 +227,7 @@ ul.hedtabsecbtn li.active a {
 }
 
 .traforboshow .form-group {
-    width: calc(96% / 2);
+    width: calc(50% - 15px);
     display: inline-block;
     position: relative;
     margin-right: 15px;
@@ -237,6 +245,14 @@ ul.hedtabsecbtn li.active a {
     border: 1px solid #bbb;
     border-radius: 4px;
     appearance: auto;
+}
+
+@media (max-width: 768px) {
+    .traforboshow .form-group {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+    }
 }
 
 
