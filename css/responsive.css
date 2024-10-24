@@ -24,7 +24,7 @@
 }
 
 ul.hedtabsecbtn {
-    position: sticky;
+    /*position: sticky;*/
     margin: 0;
     padding: 0;
     list-style: none;
@@ -68,7 +68,7 @@ ul.hedtabsecbtn li.active {
 .body-wrap {
     position: relative;
     margin: 0;
-    padding: 40px;
+    padding: 5px;
     width: 100%;
     display: inline-block;
     background: #d9d9d9;
@@ -100,7 +100,7 @@ ul.hedtabsecbtn li.active {
     flex-direction: row; /* Align items in a row */
     align-items: center;
     height: 10%;
-    position: sticky;
+    /*position: sticky;*/
     top: 100px;
     justify-content: space-between; /* Ensures space between items */
 }
@@ -223,4 +223,86 @@ button.inalsubmitbtn {
 
 button.inalsubmitbtn.backbtnsection {
     float: none;
+    margin-bottom: 30px;
+}
+.table-responsive {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+th{
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+.boxshowwhitbox{
+    background: #fff;
+    border: 0px solid #F7315D;
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+.desbordhisty{
+    background: #4d78b6;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #3267b2;
+    box-shadow: 0 4px 10px #cbcbcb;
+    margin-bottom: 50px;
+}
+.desbordhisty .whitcarbox {
+    display: flex;
+    gap: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 95%;
+}
+.boxshowwhitbox tr {
+    border-bottom: 1px solid #ccc8c8;
+}
+
+.boxshowwhitbox .uplod span.Pending {
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+    background: #FB8832;
+}
+.boxshowwhitbox .uplod span.Completed {
+    border-radius: 5px;
+    padding: 4px;
+    background: #4AAF05;
+}
+.boxshowwhitbox .uplod a {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    background: #E5E5E5;
+    color: #000;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.boxshowwhitbox thead {
+    background: #e9e8e8;
+}
+.boxshowwhitbox tr {
+    border-bottom: 1px solid #ccc8c8;
+}
+.boxshowwhitbox .uplod span.Pending {
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+    background: #FB8832;
+}
+.boxshowwhitbox .uplod span.Completed {
+    border-radius: 5px;
+    padding: 4px;
+    background: #4AAF05;
 }

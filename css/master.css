@@ -663,3 +663,13 @@ screen and (max-height: 300px) {
         padding-right: 6px;
     }
 }
+.logo {
+    width: 50%; /* Adjusted width to take up half the space */
+    text-align: center;
+    margin-top: auto; /* Move logo to the bottom */
+}
+
+.logo img {
+    width: 120px; /* Adjust the size */
+    height: auto;
+}
